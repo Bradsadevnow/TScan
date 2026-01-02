@@ -1,4 +1,6 @@
-T-Scan: A Practical Method for Visualizing Transformer Internals
+**T-Scan: A Practical Method for Visualizing Transformer Internals**
+
+
 T-Scan is a methodology and set of tools designed for inspecting and visualizing the internal activations of transformer models. It provides a reproducible framework for measurement, intervention, and logging, allowing researchers to explore neural activity through any rendering method they choose.
 
 Project Overview
