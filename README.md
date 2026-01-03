@@ -21,7 +21,7 @@ Dimension 0 is the first dimension. Keep this in mind when mapping logs to model
 
 Quick Start
 1. Dependencies
-Bash
+
 
 pip install torch transformers accelerate safetensors tqdm gradio
 Note: Ensure your IDE is pointed to the correct virtual environment if applicable.
@@ -29,7 +29,7 @@ Note: Ensure your IDE is pointed to the correct virtual environment if applicabl
 2. Establish a Baseline
 Run the MRI-style sweep to map the model's default activations:
 
-Bash
+
 
 python mri_sweep.py
 This script downloads Qwen 2.5 3B Instruct into a /models directory and performs a scan using a low-cognitive-load prompt: "Respond with the word hello.". This establishes a clean reference state where activations are at a minimal operating regime, improving the accuracy of later comparisons.
@@ -45,7 +45,7 @@ tokens.jsonl: A per-step index of generated tokens.
 Causal Intervention Lab (The "Comparator")
 To perform targeted pokes and A/B testing, run the Gradio interface:
 
-Bash
+
 
 python dim_poke.py
 Open http://127.0.0.1:7860/ to access the UI.
